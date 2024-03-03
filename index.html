@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 5px;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        .top{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(58, 57, 57);
+            width: 50%;
+            height: 30px;
+            
+        }
+        .sec{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+            width: 50%;
+            height: 5px;
+        }
+        .main{
+            margin-left: auto;
+            margin-right: auto;
+            background-color:#264a6d;
+            width: 50%;
+            overflow-x: auto;
+        }
+        form{
+            padding-top: 10px;
+            
+            
+        }
+        table{
+            width: 50%;         
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0%;
+        }
+        tr{
+            text-align: center;
+            background-color: aquamarine;
+        }
+        th{
+            background-color: aquamarine;
+        }
+        td{
+            background-color: beige;
+        }
+        .rng{
+            background-color: aquamarine;            
+        }
+        .brdr{
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:#264a6d;
+            box-sizing: border-box;
+            height: 10px;
+            border-top: 3px solid aquamarine;
+            border-bottom: 3px solid aquamarine;
+        }
+        textarea{
+            width: 200px;
+            height: 30px;
+        }
+        iframe{
+            position: relative;
+            left: 15%;
+            min-width: 200px;
+            width: 70%;
+            height: 270px;
+        }
+        label{
+            font-size: 12px;
+        }
+       
+    </style>
+</head>
+<body style="background-color: black;">
+
+    <div class="top"></div>
+    <div class="sec"></div>
+    <div class="main">
+        <form action="">
+            <table border="1">
+                <thead>
+                    <th style="font-size: 13px;" colspan="3">Müraciət et</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rng">Şəkil yükləyin</td>
+                        <td colspan="2">
+                            
+                            <input type="file" id="fayl" name="">
+
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rng">Ad</td>
+                        <td colspan="2"><input type="text" placeholder="Ad"></td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Soyad</td>
+                        <td colspan="2"><input type="text" placeholder="Soyad"></td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Doğum tarixi</td>
+                        <td colspan="2"><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Cinsiyyet</td>
+                        <td colspan="2">
+                            <label for="kisi">Kişi</label>
+                            <input style="width: 8px;" type="radio" id="kisi" name="cinsiyyet" value="kisi">
+                            <label for="qadin">Qadin</label>
+                            <input style="width: 8px;" type="radio" id="qadin" name="cinsiyyet" value="qadin">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Email</td>
+                        <td colspan="2"><input type="text" placeholder="Emailinizi yazın"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="rng">Əlaqə</td>
+                        <td style="background-color: bisque;">tel:</td>
+                        <td><input type="text" placeholder="phone"></td>
+                    </tr>
+                    <tr>
+                        <td  style="background-color: bisque;">tel:</td>
+                        <td><input type="text" placeholder="phone"></td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Təcrübələriniz</td>
+                        <td colspan="2"> <textarea name="" id="" placeholder="Təcrübələrinizi qeyd edin..." ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Xarici diller</td>
+                        <td colspan="2">
+                            <label for="ing">Ingilis dili</label>
+                            <input style="width: 8px;;" type="radio" id="ing" name="dil" value="ing">
+                            <label for="tr">Turk dili</label>
+                            <input style="width: 8px;" type="radio" id="tr" name="dil" value="tr">
+                            <label for="rus">Rus dili</label>
+                            <input style="width: 8px;" type="radio" id="rus" name="dil" value="rus">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Əsgərlik</td>
+                        <td colspan="2">
+                            <select id="rng">
+                                <option value="olub">Xidmətdə olub</option>
+                                <option value="olmayib">Xidmətdə olmayıb</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rng">Tehsil</td>
+                        <td colspan="2">
+                            <select id="2">
+                                <option value="orta">Orta tehsil</option>
+                                <option value="ali">Ali tehsil</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="rng"><button>Tesdiq et</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="brdr"></div>
+        <h1 style="text-align: center; font-size:30px;">Bizim Haqqimizda</h1>
+        
+            <iframe width="50%" src="https://www.youtube.com/embed/nMgD_X0Cgg8"></iframe>
+            </iframe>
+        
+    </div>
+
+    
+    
+</body>
+</html>
